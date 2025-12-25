@@ -6,6 +6,7 @@ import Header from "@/src/common/Header";
 import { ConvexClientProvider } from "@/src/utils/ConvexClientProvider";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
+import { Toaster } from "@/lib/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,6 +61,7 @@ export default function RootLayout({
                   <div className="text-sm">Made with 💜 by BP</div>
                 </footer>
               </main>
+              <Toaster position="top-center" richColors />
             </ConvexClientProvider>
           </ClerkProvider>
         </ThemeProvider>

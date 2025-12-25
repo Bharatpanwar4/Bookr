@@ -1,6 +1,5 @@
 "use client";
-import Image from "next/image";
-import { logoIcon } from "../utils/image";
+
 import Link from "next/link";
 import { SignInButton, UserButton } from "@clerk/nextjs";
 import { Button } from "@/lib/ui/button";
