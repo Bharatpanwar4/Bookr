@@ -1,3 +1,3 @@
 import logoIcon from "@/public/asset/logo.png";
-
-export { logoIcon };
+import heroIcon from "@/public/asset/hero.png";
+export { logoIcon, heroIcon };

@@ -1,6 +1,5 @@
 "use client";
-import Image from "next/image";
-import { logoIcon } from "../utils/image";
+
 import Link from "next/link";
 import { SignInButton, UserButton } from "@clerk/nextjs";
 import { Button } from "@/lib/ui/button";
@@ -9,6 +8,7 @@ import { useStoreUser } from "../hooks/useStoreUserEffect";
 import { BarLoader } from "react-spinners";
 import { useState } from "react";
 import { Building, Plus, Ticket } from "lucide-react";
+import Logo from "./Logo";
 const Header = () => {
   const { isLoading } = useStoreUser();
   const [showUpgradeModel, setShowUpgradeModel] = useState(false);
@@ -18,14 +18,16 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* logo */}
           <Link href={"/"} className="flex items-center">
-            <Image
+            {/* <Image
               src={logoIcon}
               className="w-fit h-11"
               width={500}
               height={500}
               priority
               alt="logo"
-            />
+            /> */}
+
+            <Logo />
           </Link>
 
           {/* serch */}
